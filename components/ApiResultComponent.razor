@@ -1,0 +1,21 @@
+@inject RickAndMorty RaM
+
+<div class="card">
+    <img src="@Image" class="card-img-top" alt="User Picture">
+    <div class="card-body">
+        <h5 class="card-title">@Name</h5>
+        <p class="card-text">@Species</p>
+    </div>
+</div>
+
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+    [Parameter]
+    public string? Name { get; set; }
+    [Parameter]
+    public string? Species { get; set; }
+    [Parameter]
+    public string? Image { get; set; }
+}

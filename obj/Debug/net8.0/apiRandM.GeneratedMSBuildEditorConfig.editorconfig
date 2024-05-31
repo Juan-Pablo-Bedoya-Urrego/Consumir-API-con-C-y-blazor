@@ -1,0 +1,47 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = apiRandM
+build_property.RootNamespace = apiRandM
+build_property.ProjectDir = C:\Users\Juan Pablo\Desktop\Programas\Csharp\apiRandM\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Juan Pablo\Desktop\Programas\Csharp\apiRandM
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Juan Pablo/Desktop/Programas/Csharp/apiRandM/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Juan Pablo/Desktop/Programas/Csharp/apiRandM/components/ApiResultComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Y29tcG9uZW50c1xBcGlSZXN1bHRDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Juan Pablo/Desktop/Programas/Csharp/apiRandM/Pages/ApiConsumerPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBpQ29uc3VtZXJQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Juan Pablo/Desktop/Programas/Csharp/apiRandM/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Juan Pablo/Desktop/Programas/Csharp/apiRandM/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-sn7ytqun0u
+
+[C:/Users/Juan Pablo/Desktop/Programas/Csharp/apiRandM/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-mhvdef3kpb

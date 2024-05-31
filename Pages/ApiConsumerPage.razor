@@ -1,0 +1,52 @@
+@page "/"
+@inject RickAndMorty RaM
+
+<h3>Buscar Por el nombre</h3>
+<input @bind="buscarNombre" placeholder="Ingrese el nombre del personaje" />
+<button @onclick="Buscar">Buscar</button>
+<h4>Filtrar por genero</h4>
+<div class="btn-group" role="group" aria-label="Basic outlined example">
+    <a @onclick="@(async () => await FilterGender("Female"))" class="btn btn-outline-primary">Female</a>
+    <a @onclick="@(async () => await FilterGender("Male"))" class="btn btn-outline-primary">Male</a>
+    <a @onclick="@(async () => await FilterGender("Genderless"))" class="btn btn-outline-primary">Genderless</a>
+    <a @onclick="@(async () => await FilterGender("Unknown"))" class="btn btn-outline-primary">Unknown</a>
+</div>
+@if (characters == null)
+{
+    <p><em>Cargando informacion....</em></p>
+}
+else
+{
+    <div class="d-flex flex-wrap">
+        @foreach (var character in characters)
+        {
+            <ApiResultComponent Name="@character.Name" Species="@character.Species" Image="@character.Image" />
+        }
+    </div>
+}
+
+
+@code {
+    private string buscarNombre;
+    private List<RickAndMorty.RickAndMortyCharacters> characters;
+    protected override async Task OnInitializedAsync()
+    {
+        this.characters = await RaM.GetCharactersAsync();
+    }
+    private async Task Buscar()
+    {
+        if (!string.IsNullOrWhiteSpace(buscarNombre))
+        {
+            this.characters = await RaM.GetSearchCaractersAsync(buscarNombre);
+        }
+        else
+        {
+            this.characters = await RaM.GetCharactersAsync();
+        }
+    }
+
+    private async Task FilterGender(string gender)
+    {
+        this.characters = await RaM.GetFemaleCaractersAsync(gender);
+    }
+}
